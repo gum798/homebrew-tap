@@ -13,10 +13,9 @@ cask "anyclip" do
   app "AnyClip.app"
 
   caveats <<~EOS
-    AnyClip is ad-hoc signed (not notarized). If macOS blocks the first
-    launch, either install with:
-      brew install --cask --no-quarantine anyclip
-    or right-click AnyClip.app and choose Open once.
+    AnyClip is ad-hoc signed (not notarized), so Gatekeeper blocks the
+    first launch. Either right-click AnyClip.app and choose Open once, or:
+      xattr -dr com.apple.quarantine /Applications/AnyClip.app
   EOS
 
   zap trash: [
