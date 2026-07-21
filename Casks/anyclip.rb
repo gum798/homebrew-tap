@@ -1,6 +1,6 @@
 cask "anyclip" do
-  version "1.1.14"
-  sha256 "86f3ae4af95de8ffb241a14360b2fc14c1021b5cd72213252f8cf424809d6a7a"
+  version "1.2.0"
+  sha256 "8acb2475708a6068345f5f5238948a70f3d6167ff0a14ea13c71781b50fa67c3"
 
   url "https://github.com/gum798/AnyClip/releases/download/v#{version}/AnyClip-v#{version}-macos-arm64.zip"
   name "AnyClip"
