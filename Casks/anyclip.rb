@@ -1,13 +1,12 @@
 cask "anyclip" do
-  version "1.4.4"
-  sha256 "3a1d6697a17ba5cac530bab739dbb18697b67dd5ae71e628fe1b68a82031abf9"
+  version "1.4.5"
+  sha256 "2617c9f83ea534fae0fbd0aeca2602b6fb2eee3ff1549107b444f99e00e837f2"
 
-  url "https://github.com/gum798/AnyClip/releases/download/v#{version}/AnyClip-v#{version}-macos-arm64.zip"
+  url "https://github.com/gum798/AnyClip/releases/download/v#{version}/AnyClip-v#{version}-macos-universal.zip"
   name "AnyClip"
   desc "LAN clipboard sync between two computers"
   homepage "https://github.com/gum798/AnyClip"
 
-  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "AnyClip.app"
